@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Postage Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="package_type_">Package Type:</string>
+    <string name="letter">Letter</string>
+    <string name="calculate">Calculate</string>
+
+</resources>

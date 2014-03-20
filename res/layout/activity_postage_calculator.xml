@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PostageCalculator" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/package_type_" />
+
+	<RadioGroup
+	    android:id="@+id/type"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/textView1"
+	    android:layout_alignTop="@+id/textView1" >
+
+	    <RadioButton
+	        android:id="@+id/radiobutton1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="28dp"
+	        android:text="@string/letter" />
+
+	    <RadioButton
+	        android:id="@+id/radiobutton2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Large Envelope" />
+
+	    <RadioButton
+	        android:id="@+id/radiobutton3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Package" />
+	</RadioGroup>
+
+	<TextView
+	    android:id="@+id/textview2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/type"
+	    android:layout_below="@+id/type"
+	    android:layout_marginTop="26dp"
+	    android:text="Weight:" />
+
+	<EditText
+	    android:id="@+id/editText1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/textview2"
+	    android:layout_below="@+id/textview2"
+	    android:layout_marginTop="16dp"
+	    android:ems="10"
+	    android:hint="Weight in ounces" />
+
+	<TextView
+	    android:id="@+id/textView3"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/editText1"
+	    android:layout_below="@+id/editText1"
+	    android:layout_marginTop="28dp"
+	    android:hint="$Cost"
+	    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	<Button
+	    android:id="@+id/button1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textView3"
+	    android:layout_marginTop="16dp"
+	    android:layout_toRightOf="@+id/textView1"
+	    android:clickable="false"
+	    android:text="@string/calculate" />
+
+</RelativeLayout>
